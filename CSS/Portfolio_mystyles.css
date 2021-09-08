@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F5EFE7
+}
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  z-index: 1;
+  padding: 1rem;
+}
+.dropbtn {
+  background-color: transparent;
+  color: #1A4501;
+  font-size: 2.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F5EFE7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #00000066;
+}
+
+.dropdown-content a {
+  color: #787675;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dropdown-content a:hover {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: overline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.jumbotron {
+  display: flex;
+  color: #F9F5F0;
+  background-image: url("Images/Bath_Circus.jpg");
+  background-color: #F5EFE7;
+  background-size: cover; 
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron img {
+  height: 100vh;
+  opacity: 0.75;
+}
+
+.jumbotron .image-wrapper { 
+  overflow: hidden;
+  height: 100vh;
+  animation: grow ease 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  0% {
+     transform: scale(1);
+  }
+  100% {
+     transform: scale(1.2);
+     animation-direction: inherit;
+  }
+}
+
+.jumbotron .home-text {
+  position: absolute;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+  font-family: "Lora", serif;
+}
+
+.jumbotron h2 {
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  border-top: solid #F9F5F0 thin;
+  padding-top: 3rem;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.arrow i {
+  position: relative;
+  color: #F9F5F0;
+  font-size: 3.5rem;
+}
+
+.about {
+  display: flex;
+  color: #787675;
+  background-color: #F5EFE7;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about .marker-img {
+  width: 2rem;
+  padding-top: 1rem;
+}
+
+.about .personal {
+  font-family: "Lora", serif;
+  width: 75vw;
+  line-height: 3rem;
+}
+
+.about span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.work {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  font-family: "Montserrat", sans-serif;
+  color: #F5EFE7;
+  background-color: #959493;
+  text-align: center;
+  margin: 5rem;
+  padding: 5rem;
+}
+
+.work h2 {
+  font-size: 3.5rem;
+}
+
+.work p {
+  font-size: 1.5rem;
+  border: solid #FFFFFF thin;
+}
+
+.work img {
+  width: 20rem;
+}
+
+.project-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1, .project2, .project3 {
+  padding: 1.5rem;
+  transition: all .2s ease;
+}
+
+.project1:hover, .project2:hover, .project3:hover { 
+  transform: scale(1.1); 
+}
+
+.contact {
+  display: flex;
+  color: #787675;
+  background-color: #F5EFE7;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+  min-height: 100vh;
+}
+
+.contact-links {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  opacity: 0.75;
+}
+
+.contact-links img {
+  padding: 0 2rem;
+  transition: all .2s ease-in-out;
+}
+
+.contact-links img:hover { 
+  transform: scale(1.1); 
+}
