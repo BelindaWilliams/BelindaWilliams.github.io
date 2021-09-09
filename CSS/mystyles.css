@@ -3,45 +3,46 @@
 }
 
 body {
-  padding: 0;
-  margin: 0;
   background-color: #F5EFE7;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdown {
-  position: fixed;
   display: inline-block;
-  z-index: 1;
+  position: fixed;
   padding: 1rem;
+  z-index: 1;
 }
+
 .dropbtn {
   background-color: #F5EFE7;
-  color: #1A4501;
-  font-size: 2.5rem;
-  border-radius: 20%;
-  cursor: pointer;
   border-color: #959493;
+  border-radius: 20%;
+  color: #1A4501;
+  cursor: pointer;
+  font-size: 2.5rem;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
   background-color: #F5EFE7;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px #787675;
+  display: none;
+  min-width: 160px;
+  position: absolute;
 }
 
 .dropdown-content a {
   color: #787675;
-  padding: 1rem;
-  text-decoration: none;
   display: block;
   font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 .dropdown-content a:hover {
-  font-weight: bold;
   font-size: 1.2rem;
+  font-weight: bold;
   text-decoration: overline;
 }
 
@@ -55,13 +56,13 @@ body {
 
 .jumbotron {
   display: flex;
-  color: #F9F5F0;
+  align-items: center;
   background-image: url("Images/Bath_Circus.jpg");
   background-color: #F5EFE7;
   background-size: cover; 
-  min-height: 100vh;
+  color: #F9F5F0;
   justify-content: center;
-  align-items: center;
+  min-height: 100vh;
 }
 
 .jumbotron img {
