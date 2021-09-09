@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5EFE7;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown {
+  display: inline-block;
+  position: fixed;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.dropbtn {
+  background-color: #F5EFE7;
+  border-color: #959493;
+  border-radius: 20%;
+  color: #1A4501;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.dropdown-content {
+  background-color: #F5EFE7;
+  box-shadow: 0px 8px 16px 0px #787675;
+  display: none;
+  min-width: 160px;
+  position: absolute;
+}
+
+.dropdown-content a {
+  color: #787675;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: overline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url("Images/Bath_Circus.jpg");
+  background-color: #F5EFE7;
+  background-size: cover; 
+  color: #F9F5F0;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.jumbotron img {
+  height: 100vh;
+  opacity: 0.75;
+}
+
+.jumbotron .image-wrapper { 
+  overflow: hidden;
+  height: 100vh;
+  animation: grow ease 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  0% {
+     transform: scale(1);
+  }
+  100% {
+     transform: scale(1.2);
+     animation-direction: inherit;
+  }
+}
+
+.jumbotron .home-text {
+  position: absolute;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 5rem;
+  font-family: "Lora", serif;
+  letter-spacing: 0.02em;
+}
+
+.jumbotron h2 {
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1em;
+  border-top: solid #F9F5F0 thin;
+  padding-top: 3rem;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.arrow i {
+  position: relative;
+  color: #F9F5F0;
+  font-size: 3.5rem;
+}
+
+.about {
+  display: flex;
+  color: #787675;
+  background-color: #F5EFE7;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about .marker-img {
+  width: 2rem;
+  padding-top: 1rem;
+}
+
+.about .personal {
+  font-family: "Lora", serif;
+  width: 75vw;
+  line-height: 3rem;
+}
+
+.about .personal p {
+  padding: 1rem;
+}
+
+.about span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #F5EFE7;
+  background-color: #8CA180;
+  margin: 5rem;
+  padding: 5rem;
+}
+
+.work h2 {
+  font-size: 6rem;
+  letter-spacing: 0.15em;
+  margin: 0 0 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.work p {
+  font-size: 1.5rem;
+  border: solid #FFFFFF thin;
+  text-align: center;
+}
+
+.work img {
+  width: 20rem;
+}
+
+.project-container {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C2019;
+  opacity: 95%;
+}
+
+.project1, .project2, .project3 {
+  padding: 1.5rem;
+  transition: all .2s ease;
+}
+
+.project1:hover, .project2:hover, .project3:hover { 
+  transform: scale(1.1); 
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+} 
+
+.project-links a .fas, .fab {
+  color: #9D9C9B;
+  font-size: 2rem;
+}
+
+.project-links a .fas:hover {
+  color: #009900;
+}
+
+.project-links a .fab:hover {
+  color: #FF8C00;
+}
+
+.contact {
+  display: flex;
+  color: #787675;
+  background-color: #F5EFE7;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+  min-height: 100vh;
+}
+
+.contact-links {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  opacity: 0.75;
+}
+
+.contact-links img {
+  padding: 0 2rem;
+  transition: all .2s ease-in-out;
+}
+
+.contact-links img:hover { 
+  transform: scale(1.1); 
+}
+
+@media only screen and (max-width: 825px) {
+  html {
+    font-size: 12px;
+  }
+  .work h2 {
+	font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  .work h2 {
+	font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  .work h2 {
+	font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+  .work h2 {
+	font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+  .work h2 {
+	font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+  .work h2 {
+	font-size: 1.5rem;
+  }
+}
