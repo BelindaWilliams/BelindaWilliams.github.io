@@ -178,16 +178,6 @@ body {
   text-align: center;
 }
 
-.work p {
-  font-size: 1.5rem;
-  border: solid #FFFFFF thin;
-  text-align: center;
-}
-
-.work img {
-  width: 20rem;
-}
-
 .project-container {
   display: flex;
   width: 100vw;
@@ -209,24 +199,24 @@ body {
 
 .img-container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .img {
   opacity: 1;
-  display: block;
-  width: 100%;
+  width: 20rem;
   height: auto;
-  transition: .5s ease;
+  transition: .4s ease;
   backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: .4s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 80%;
   transform: translate(-50%, -50%);
 }
 
@@ -241,8 +231,8 @@ body {
 .text {
   background-color: #F5EFE7;
   color: #787675;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 1em;
+  padding: 1rem;
 }
 
 .project-links {
