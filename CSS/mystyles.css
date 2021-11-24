@@ -10,6 +10,7 @@ body {
   background-color: #F5EFE7;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .dropdown {
@@ -255,6 +256,10 @@ body {
 
 .project-links a .fab:hover {
   color: #FF8C00;
+}
+
+.hide {
+  visibility: hidden;
 }
 
 .contact {
